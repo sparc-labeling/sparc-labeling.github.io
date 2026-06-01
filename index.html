@@ -1279,6 +1279,99 @@
 </section>
 <!-- End more results carousel -->
 
+<!-- Policy Learning -->
+<section class="section hero" style="background:#edf7f5;padding:4rem 1.5rem;">
+  <div class="container">
+    <h2 class="title is-2" style="font-family:'Google Sans',sans-serif;">Policy Learning</h2>
+    <p style="margin-bottom:1.5rem;color:#555;font-size:1.05rem;">We train reasoning VLAs on 250 demonstrations across 10 cluttered tasks. Reasoning Annotation quality drives the performance gap in visually ambiguous scenes.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+
+      <!-- Left: annotation quality -->
+      <div>
+        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:0.6rem;">Annotation Quality: SPARC vs. Detector</h3>
+        <p style="font-size:0.95rem;color:#666;margin-bottom:0.75rem;">In cluttered scenes with visually similar objects, detector-based annotation selects the wrong object. SPARC uses interaction evidence to localize the correct one.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem 0.75rem;">
+            <!-- row 1 titles -->
+            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;">Put The Yellow Cube Into The Red Bowl</div>
+            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;">Put The Yellow Cube Into The Red Dustpan</div>
+            <!-- row 1 images -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_bowl_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_bowl/det.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
+                </div>
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_bowl_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_bowl/ours.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
+                </div>
+              </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_dustpan_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_dustpan/det.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
+                </div>
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_dustpan_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_dustpan/ours.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
+                </div>
+              </div>
+            <!-- row 2 titles -->
+            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;" style="padding-top:0.75rem;">Put The Yellow Cuboid Into The Red Bowl</div>
+            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;" style="padding-top:0.75rem;">Put The Yellow Lego Block Into The Red Bowl</div>
+            <!-- row 2 images -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cuboid_into_the_red_bowl_abs_cartesian_action_0_11_sub0__put_the_yellow_cuboid_into_the_red_bowl/det.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
+                </div>
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cuboid_into_the_red_bowl_abs_cartesian_action_0_11_sub0__put_the_yellow_cuboid_into_the_red_bowl/ours.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
+                </div>
+              </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_lego_block_into_the_red_bowl_abs_cartesian_action_0_6_sub0__put_the_yellow_lego_block_into_the_red_b/det.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
+                </div>
+                <div>
+                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_lego_block_into_the_red_bowl_abs_cartesian_action_0_6_sub0__put_the_yellow_lego_block_into_the_red_b/ours.png" style="width:100%;border-radius:4px;display:block;"/>
+                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Right: rollout videos -->
+      <div>
+        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:0.6rem;">Rollout Results (5 trials per method)</h3>
+        <p style="font-size:0.95rem;color:#666;margin-bottom:0.75rem;">Videos coming soon. Each cell = one rollout.</p>
+
+        <div style="margin-bottom:1rem;">
+          <div style="font-size:0.9rem;font-weight:700;color:#c0392b;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
+            <span style="width:9px;height:9px;background:#c0392b;border-radius:50%;display:inline-block;"></span>Detection Reasoning
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
+            <div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 1</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 2</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 3</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 4</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 5</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:0.9rem;font-weight:700;color:#4c9a8e;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
+            <span style="width:9px;height:9px;background:#4c9a8e;border-radius:50%;display:inline-block;"></span>SPARC Reasoning
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
+            <div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 1</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 2</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 3</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 4</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 5</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Policy Learning -->
+
 <!-- VQA Dataset Visualization -->
 <section class="hero is-small" style="background:#f5f5f5;">
   <div class="hero-body">
@@ -1913,101 +2006,6 @@ function filterVQA(btn) {
 }
 </script>
 <!-- End VQA Dataset Visualization -->
-
-
-
-<!-- Policy Learning -->
-<section class="section hero" style="background:#ffffff;">
-  <div class="container">
-    <h2 class="title is-3">Policy Learning</h2>
-    <p style="margin-bottom:1.5rem;color:#555;">We train reasoning VLAs on 250 demonstrations across 10 cluttered tasks. Reasoning Annotation quality drives the performance gap in visually ambiguous scenes.</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
-
-      <!-- Left: annotation quality -->
-      <div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;">Annotation Quality: SPARC vs. Detector</h3>
-        <p style="font-size:0.85rem;color:#666;margin-bottom:0.75rem;">In cluttered scenes with visually similar objects, detector-based annotation selects the wrong object. SPARC uses interaction evidence to localize the correct one.</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem 0.75rem;">
-            <!-- row 1 titles -->
-            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;">Put The Yellow Cube Into The Red Bowl</div>
-            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;">Put The Yellow Cube Into The Red Dustpan</div>
-            <!-- row 1 images -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_bowl_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_bowl/det.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
-                </div>
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_bowl_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_bowl/ours.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
-                </div>
-              </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_dustpan_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_dustpan/det.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
-                </div>
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_dustpan_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_dustpan/ours.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
-                </div>
-              </div>
-            <!-- row 2 titles -->
-            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;" style="padding-top:0.75rem;">Put The Yellow Cuboid Into The Red Bowl</div>
-            <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;" style="padding-top:0.75rem;">Put The Yellow Lego Block Into The Red Bowl</div>
-            <!-- row 2 images -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cuboid_into_the_red_bowl_abs_cartesian_action_0_11_sub0__put_the_yellow_cuboid_into_the_red_bowl/det.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
-                </div>
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cuboid_into_the_red_bowl_abs_cartesian_action_0_11_sub0__put_the_yellow_cuboid_into_the_red_bowl/ours.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
-                </div>
-              </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_lego_block_into_the_red_bowl_abs_cartesian_action_0_6_sub0__put_the_yellow_lego_block_into_the_red_b/det.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#c0392b;margin-top:2px;font-weight:600;">Detector</div>
-                </div>
-                <div>
-                  <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_lego_block_into_the_red_bowl_abs_cartesian_action_0_6_sub0__put_the_yellow_lego_block_into_the_red_b/ours.png" style="width:100%;border-radius:4px;display:block;"/>
-                  <div style="font-size:0.65rem;text-align:center;color:#4c9a8e;margin-top:2px;font-weight:600;">SPARC</div>
-                </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Right: rollout videos -->
-      <div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;">Rollout Results (5 trials per method)</h3>
-        <p style="font-size:0.85rem;color:#666;margin-bottom:0.75rem;">Videos coming soon. Each cell = one rollout.</p>
-
-        <div style="margin-bottom:1rem;">
-          <div style="font-size:0.8rem;font-weight:700;color:#c0392b;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
-            <span style="width:9px;height:9px;background:#c0392b;border-radius:50%;display:inline-block;"></span>Detection Reasoning
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
-            <div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 1</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 2</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 3</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 4</span></div><div style="border:2px dashed #c0392b44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 5</span></div>
-          </div>
-        </div>
-
-        <div>
-          <div style="font-size:0.8rem;font-weight:700;color:#4c9a8e;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
-            <span style="width:9px;height:9px;background:#4c9a8e;border-radius:50%;display:inline-block;"></span>SPARC Reasoning
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
-            <div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 1</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 2</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 3</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 4</span></div><div style="border:2px dashed #4c9a8e44;border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;"><span style="font-size:1rem;">▶</span><span style="font-size:0.6rem;color:#aaa;">Rollout 5</span></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- End Policy Learning -->
 
 <!-- Failure Cases -->
 <section class="section hero" style="background:#f5f5f5;">
