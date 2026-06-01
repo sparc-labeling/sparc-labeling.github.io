@@ -185,7 +185,7 @@
 
 
 <!-- Method -->
-<section class="section hero is-white" style="border-top:3px solid;border-image:linear-gradient(90deg,#4c9a8e,#5b6fa6) 1;padding-top:3rem;">
+<section class="section hero" style="background:#ffffff;">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Method</h2>
     <img src="static/figures/method_overview-1.png" alt="SPARC method pipeline overview" style="width:100%;"/>
@@ -197,7 +197,7 @@
 <!-- End Method -->
 
 <!-- Results -->
-<section class="section hero is-light" style="border-top:3px solid;border-image:linear-gradient(90deg,#4c9a8e,#5b6fa6) 1;padding-top:3rem;">
+<section class="section hero" style="background:#f5f5f5;">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Results</h2>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
@@ -228,7 +228,7 @@
 
 
 <!-- More results carousel -->
-<section class="hero is-small is-light" style="border-top:3px solid;border-image:linear-gradient(90deg,#4c9a8e,#5b6fa6) 1;">
+<section class="hero is-small" style="background:#ffffff;">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Qualitative Results</h2>
@@ -1280,7 +1280,7 @@
 <!-- End more results carousel -->
 
 <!-- VQA Dataset Visualization -->
-<section class="hero is-small is-light" style="border-top:3px solid;border-image:linear-gradient(90deg,#4c9a8e,#5b6fa6) 1;">
+<section class="hero is-small" style="background:#f5f5f5;">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">VQA Dataset Visualization</h2>
@@ -1917,10 +1917,10 @@ function filterVQA(btn) {
 
 
 <!-- Policy Learning -->
-<section class="section hero is-white" style="border-top:3px solid;border-image:linear-gradient(90deg,#4c9a8e,#5b6fa6) 1;padding-top:3rem;">
+<section class="section hero" style="background:#ffffff;">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Policy Learning</h2>
-    <p style="margin-bottom:1.5rem;color:#555;">We train reasoning VLAs on 250 demonstrations across 10 cluttered tasks. Annotation quality — not policy capacity — drives the performance gap in visually ambiguous scenes.</p>
+    <p style="margin-bottom:1.5rem;color:#555;">We train reasoning VLAs on 250 demonstrations across 10 cluttered tasks. Annotation reasoning quality drives the performance gap in visually ambiguous scenes.</p>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;">
 
@@ -1930,7 +1930,7 @@ function filterVQA(btn) {
         <p style="font-size:0.85rem;color:#666;margin-bottom:1rem;">In cluttered scenes with visually similar objects, detector-based annotation selects the wrong object. SPARC uses interaction evidence to localize the correct one.</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
             <div>
-              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;">Put The Yellow Cube Into The Red Bowl</div>
+              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;min-height:2.4em;display:flex;align-items:flex-end;justify-content:center;">Put The Yellow Cube Into The Red Bowl</div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
                 <div>
                   <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_bowl_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_bowl/det.png" style="width:100%;border-radius:4px;display:block;"/>
@@ -1943,7 +1943,7 @@ function filterVQA(btn) {
               </div>
             </div>
             <div>
-              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;">Put The Yellow Cube Into The Red Dustpan</div>
+              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;min-height:2.4em;display:flex;align-items:flex-end;justify-content:center;">Put The Yellow Cube Into The Red Dustpan</div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
                 <div>
                   <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cube_into_the_red_dustpan_abs_cartesian_action_0_0_sub0__put_the_yellow_cube_into_the_red_dustpan/det.png" style="width:100%;border-radius:4px;display:block;"/>
@@ -1956,7 +1956,7 @@ function filterVQA(btn) {
               </div>
             </div>
             <div>
-              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;">Put The Yellow Cuboid Into The Red Bowl</div>
+              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;min-height:2.4em;display:flex;align-items:flex-end;justify-content:center;">Put The Yellow Cuboid Into The Red Bowl</div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
                 <div>
                   <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_cuboid_into_the_red_bowl_abs_cartesian_action_0_11_sub0__put_the_yellow_cuboid_into_the_red_bowl/det.png" style="width:100%;border-radius:4px;display:block;"/>
@@ -1969,7 +1969,7 @@ function filterVQA(btn) {
               </div>
             </div>
             <div>
-              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;">Put The Yellow Lego Block Into The Red B</div>
+              <div style="font-size:0.72rem;font-weight:600;color:#555;margin-bottom:0.4rem;text-align:center;min-height:2.4em;display:flex;align-items:flex-end;justify-content:center;">Put The Yellow Lego Block Into The Red B</div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
                 <div>
                   <img src="static/figures/robot_trajs/ours_real_robot_ambiguity_3_obs_Put_the_yellow_lego_block_into_the_red_bowl_abs_cartesian_action_0_6_sub0__put_the_yellow_lego_block_into_the_red_b/det.png" style="width:100%;border-radius:4px;display:block;"/>
