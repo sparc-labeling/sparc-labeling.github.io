@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/2361
+subtask_index: 0
+language_instruction: put the objects surrounding the white plate on to the plate.
+mismatch_score: 0.859694
+
+[ours]
+target_mode: density
+pred_idx: 4
+pred_score: 0.859694
+pred_iou: 0.000000
+pred_is_correct: False

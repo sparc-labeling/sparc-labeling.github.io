@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/18465
+subtask_index: 0
+language_instruction: press the open button of the bin
+mismatch_score: 0.865536
+
+[ours]
+target_mode: density
+pred_idx: 3
+pred_score: 0.865536
+pred_iou: 0.000000
+pred_is_correct: False

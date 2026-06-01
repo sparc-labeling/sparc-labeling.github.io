@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_363/0/833/0
+subtask_index: 0
+language_instruction: grip the drawer handle with left arm
+mismatch_score: 0.850953
+
+[ours]
+target_mode: density
+pred_idx: 5
+pred_score: 0.864970
+pred_iou: 0.016206
+pred_is_correct: False

@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/7161
+subtask_index: 0
+language_instruction: take the pen out of the yellow mug and place it on the right side of the table
+mismatch_score: 0.850861
+
+[ours]
+target_mode: density
+pred_idx: 1
+pred_score: 0.851416
+pred_iou: 0.000651
+pred_is_correct: False

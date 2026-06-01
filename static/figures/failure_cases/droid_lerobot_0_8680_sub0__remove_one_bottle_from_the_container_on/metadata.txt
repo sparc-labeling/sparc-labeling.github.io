@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/8680
+subtask_index: 0
+language_instruction: remove one bottle from the container on the right and place it on the tray
+mismatch_score: 0.878735
+
+[ours]
+target_mode: density
+pred_idx: 6
+pred_score: 0.878735
+pred_iou: 0.000000
+pred_is_correct: False

@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/16009
+subtask_index: 0
+language_instruction: remove the wooden spoon from the cooker and put it on the counter
+mismatch_score: 0.840153
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.860950
+pred_iou: 0.024156
+pred_is_correct: False

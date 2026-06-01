@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_597/0/1245/1
+subtask_index: 0
+language_instruction: pick up the shrimp chips from the replenishment box with the right arm then place the held shrimp chips on the shelf at the position with shrimp chips using the right arm
+mismatch_score: 0.861796
+
+[ours]
+target_mode: density
+pred_idx: 19
+pred_score: 0.861796
+pred_iou: 0.000000
+pred_is_correct: False

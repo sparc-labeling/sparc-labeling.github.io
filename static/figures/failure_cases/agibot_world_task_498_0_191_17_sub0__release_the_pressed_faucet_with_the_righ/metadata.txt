@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_498/0/191/17
+subtask_index: 0
+language_instruction: release the pressed faucet with the right arm
+mismatch_score: 0.879761
+
+[ours]
+target_mode: density
+pred_idx: 11
+pred_score: 0.879761
+pred_iou: 0.000000
+pred_is_correct: False

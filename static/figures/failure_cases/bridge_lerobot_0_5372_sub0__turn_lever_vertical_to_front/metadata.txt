@@ -1,0 +1,12 @@
+dataset: bridge_lerobot
+trajectory_name: 0/5372
+subtask_index: 0
+language_instruction: turn lever vertical to front
+mismatch_score: 0.550635
+
+[ours]
+target_mode: density
+pred_idx: 1
+pred_score: 0.550635
+pred_iou: 0.000000
+pred_is_correct: False

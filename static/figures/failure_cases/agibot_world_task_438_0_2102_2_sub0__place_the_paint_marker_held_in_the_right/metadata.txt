@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_438/0/2102/2
+subtask_index: 0
+language_instruction: place the paint marker held in the right hand into the pen holder on the desk
+mismatch_score: 0.868632
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.910956
+pred_iou: 0.046461
+pred_is_correct: False

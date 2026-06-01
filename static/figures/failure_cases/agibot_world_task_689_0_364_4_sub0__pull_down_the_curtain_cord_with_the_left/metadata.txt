@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_689/0/364/4
+subtask_index: 0
+language_instruction: pull down the curtain cord with the left arm
+mismatch_score: 0.929486
+
+[ours]
+target_mode: density
+pred_idx: 2
+pred_score: 0.929486
+pred_iou: 0.000000
+pred_is_correct: False

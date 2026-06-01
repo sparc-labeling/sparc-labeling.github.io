@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/30674
+subtask_index: 0
+language_instruction: take the lid off the black pot and put it on the table
+mismatch_score: 0.867276
+
+[ours]
+target_mode: density
+pred_idx: 10
+pred_score: 0.906714
+pred_iou: 0.043496
+pred_is_correct: False

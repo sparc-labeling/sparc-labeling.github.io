@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_433/0/453/6
+subtask_index: 0
+language_instruction: grasp the spoon in the cup with the right arm then stir the coffee in the cup with the spoon held in the right hand then release the held spoon into the cup with the right arm
+mismatch_score: 0.917582
+
+[ours]
+target_mode: density
+pred_idx: 3
+pred_score: 0.917582
+pred_iou: 0.000000
+pred_is_correct: False

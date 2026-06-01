@@ -1,0 +1,12 @@
+dataset: bridge_lerobot
+trajectory_name: 0/10338
+subtask_index: 0
+language_instruction: close microwave
+mismatch_score: 0.634122
+
+[ours]
+target_mode: density
+pred_idx: 3
+pred_score: 0.643761
+pred_iou: 0.014973
+pred_is_correct: False

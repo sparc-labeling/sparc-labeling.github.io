@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_414/0/278/4
+subtask_index: 0
+language_instruction: grasp the right collar with the right arm then hang the clothes held in the right arm on the right side of wooden clothes hanger
+mismatch_score: 0.870473
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.888851
+pred_iou: 0.020676
+pred_is_correct: False

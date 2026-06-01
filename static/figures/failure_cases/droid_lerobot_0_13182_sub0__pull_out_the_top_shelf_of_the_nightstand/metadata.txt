@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/13182
+subtask_index: 0
+language_instruction: pull out the top shelf of the nightstand
+mismatch_score: 0.853852
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.884102
+pred_iou: 0.034216
+pred_is_correct: False

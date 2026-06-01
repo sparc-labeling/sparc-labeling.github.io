@@ -1,0 +1,12 @@
+dataset: bridge_lerobot
+trajectory_name: 0/28711
+subtask_index: 0
+language_instruction: fork to the right side of the stove
+mismatch_score: 0.512406
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.512406
+pred_iou: 0.000000
+pred_is_correct: False

@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_603/0/85/2
+subtask_index: 0
+language_instruction: aim the held barcode scanner with the right arm at the barcode of the item held by the left arm red potato chips then place the held red potato chips into the gray felt bag on the left side of the cash register with the left arm
+mismatch_score: 0.923120
+
+[ours]
+target_mode: density
+pred_idx: 3
+pred_score: 0.923120
+pred_iou: 0.000000
+pred_is_correct: False
