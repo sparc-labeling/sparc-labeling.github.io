@@ -1,0 +1,1 @@
+Given the task 'pick up the milky white water bottle with left arm then place the held milky white water bottle under the faucet with left arm', point to the milky white water bottle. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

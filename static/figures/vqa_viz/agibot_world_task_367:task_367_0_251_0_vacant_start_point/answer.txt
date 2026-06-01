@@ -1,0 +1,3 @@
+```json
+[{"point_2d": [694, 452], "label": "front card slot white toaster"}]
+```

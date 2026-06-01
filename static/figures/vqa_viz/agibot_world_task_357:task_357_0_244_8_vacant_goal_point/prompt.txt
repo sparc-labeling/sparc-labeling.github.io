@@ -1,0 +1,1 @@
+Given the task 'place the plate in the dishwasher with the left arm', point to a valid empty spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

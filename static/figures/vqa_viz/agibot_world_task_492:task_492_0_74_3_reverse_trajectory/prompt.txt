@@ -1,0 +1,1 @@
+Given the task 'lift the left arm with orange juice from the checkout counter', trace 8 ordered waypoints for the orange juice toward a free spot at checkout counter. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

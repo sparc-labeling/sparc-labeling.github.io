@@ -1,0 +1,1 @@
+Given the task 'grasp the right collar with the right arm then hang the clothes held in the right arm on the right side of wooden clothes hanger', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

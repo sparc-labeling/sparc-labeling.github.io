@@ -1,0 +1,1 @@
+Given the task 'lift the rubik's cube on the table with the left arm then place the rubik's cube held in the left arm into the drawer', point to the rubik's cube. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

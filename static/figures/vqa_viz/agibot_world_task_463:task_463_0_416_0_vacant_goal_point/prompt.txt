@@ -1,0 +1,1 @@
+Given the task 'pick up the cloth on the table with right arm then wipe the stains on microwave oven clean with right arm then place the cloth on the table with right arm', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

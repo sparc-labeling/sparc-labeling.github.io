@@ -1,0 +1,1 @@
+Given the task 'smooth out a messy brown shorts with both arms and spread it flat', trace 8 ordered waypoints for the messy brown shorts. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

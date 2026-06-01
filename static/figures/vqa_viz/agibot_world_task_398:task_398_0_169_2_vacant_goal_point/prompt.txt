@@ -1,0 +1,1 @@
+Given the task 'retrieve blue-black casual trousers from left material frame with the left arm then place the blue-black casual trousers held in the left arm into the left gray target box', point to a valid empty spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

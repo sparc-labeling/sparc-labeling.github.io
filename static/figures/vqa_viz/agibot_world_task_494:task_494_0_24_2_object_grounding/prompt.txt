@@ -1,0 +1,1 @@
+Given the task 'lift soy sauce with the left arm then cover the bottle cap held by the left arm with the right arm then pass the soy sauce with both hands', point to the soy sauce bottle. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

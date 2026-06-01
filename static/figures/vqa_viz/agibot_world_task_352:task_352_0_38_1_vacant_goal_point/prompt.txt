@@ -1,0 +1,1 @@
+Given the task 'pick up the green boxed lemon tea from the fridge with the left arm then place the green boxed lemon tea held in the left arm on the table', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

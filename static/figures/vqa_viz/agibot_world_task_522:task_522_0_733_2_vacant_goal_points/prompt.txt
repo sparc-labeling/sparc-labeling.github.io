@@ -1,0 +1,1 @@
+Given the task 'pick up the blue tissues on the table with the right arm then place the picked-up blue tissues in the tissue box with the right arm', mark 6 empty positions at the target location. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

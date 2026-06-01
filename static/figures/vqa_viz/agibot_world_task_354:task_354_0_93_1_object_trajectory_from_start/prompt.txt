@@ -1,0 +1,1 @@
+Given the task 'place the held snow cake into the shopping cart', the snow cake starts at [421, 188]. Predict 8 ordered waypoints so it reaches a valid position at shopping cart. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

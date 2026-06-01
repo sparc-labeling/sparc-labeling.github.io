@@ -1,0 +1,1 @@
+Given the task 'pick up the black frying pan in the sink with left arm then wash the held black frying pan under the faucet with left arm', point to a valid empty spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

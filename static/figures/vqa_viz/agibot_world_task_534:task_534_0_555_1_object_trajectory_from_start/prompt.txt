@@ -1,0 +1,1 @@
+Given the task 'pull the held curtain all the way in the direction of left arm with left arm', starting from [716, 509], trace 8 ordered waypoints for the curtain. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

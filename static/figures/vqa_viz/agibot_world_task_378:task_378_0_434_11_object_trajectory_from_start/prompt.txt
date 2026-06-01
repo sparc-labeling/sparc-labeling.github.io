@@ -1,0 +1,1 @@
+Given the task 'coordinate arms to lift the tray', starting from [414, 791], trace 8 ordered waypoints for the tray. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

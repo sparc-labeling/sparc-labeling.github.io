@@ -1,0 +1,1 @@
+Given the task 'lift the shampoo on the counter with the left arm', starting from [416, 441], trace 8 ordered waypoints for the shampoo. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

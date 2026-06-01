@@ -1,0 +1,1 @@
+Given the task 'use the orange eraser to wipe the white board', trace 8 ordered waypoints for the white board. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

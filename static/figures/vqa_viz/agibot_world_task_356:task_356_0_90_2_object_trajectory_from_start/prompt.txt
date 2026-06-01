@@ -1,0 +1,1 @@
+Given the task 'grab the boxed aerated candy on the table with the right arm then place the held boxed aerated candy into white plastic bag', the white plastic bag starts at [617, 524]. Predict 8 ordered waypoints. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

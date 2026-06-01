@@ -1,0 +1,1 @@
+Point to a valid empty spot at the target location for 'retrieve red battery with the right arm from bottom right corner of the material frame then place the red battery held in the right arm into the blue target box on the right'. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

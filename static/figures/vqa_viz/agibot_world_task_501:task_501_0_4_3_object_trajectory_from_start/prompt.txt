@@ -1,0 +1,1 @@
+Given the task 'pass the cloth with both hands then place the held cloth on the washstand with left arm', plan 8 ordered waypoints for the cloth from [571, 536] to a valid position at washstand. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

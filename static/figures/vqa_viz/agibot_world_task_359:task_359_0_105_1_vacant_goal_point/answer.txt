@@ -1,0 +1,3 @@
+```json
+[{"point_2d": [711, 453], "label": "right blue target box"}]
+```

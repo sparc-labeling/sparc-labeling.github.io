@@ -1,0 +1,1 @@
+To complete 'grasp the yogurt bowl on the table with the right arm then place the grasped yogurt bowl into blue nylon bag', predict 8 ordered waypoints for the yogurt bowl to reach at table. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

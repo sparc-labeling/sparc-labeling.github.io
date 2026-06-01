@@ -1,0 +1,1 @@
+Given the task 'retrieve the children's masks from top right corner of the material frame with the right arm then pass the children's masks with both hands', point to the children's masks. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

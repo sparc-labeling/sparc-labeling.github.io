@@ -1,0 +1,1 @@
+Given the task 'lift the right arm with gray teapot then pour the water from gray teapot into the cup then place the right arm back on the table', predict 8 ordered waypoints for the gray teapot. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

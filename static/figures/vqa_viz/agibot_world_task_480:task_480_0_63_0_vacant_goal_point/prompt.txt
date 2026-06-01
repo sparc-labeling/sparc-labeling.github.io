@@ -1,0 +1,1 @@
+Given the task 'pick up the whole wheat toast from the front slot with the right arm then place the held whole wheat toast into the meal tray with the right arm', identify an empty position at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

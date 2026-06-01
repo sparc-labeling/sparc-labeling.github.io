@@ -1,0 +1,1 @@
+Given the task 'lift the permanent magnet ingot from the table with the right arm then place the held permanent magnet ingot into row 3, column 3 with the right arm', identify 6 valid free spots at table. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

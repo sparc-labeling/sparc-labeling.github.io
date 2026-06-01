@@ -1,0 +1,1 @@
+Given the task 'pick up the pink plastic plate in the sink with left arm then place the held pink plastic plate under the faucet with left arm', identify 6 valid points at the target location. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

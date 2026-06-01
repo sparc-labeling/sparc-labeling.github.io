@@ -1,0 +1,3 @@
+```json
+[{"point_2d": [441, 686], "label": "edge of the table"}]
+```

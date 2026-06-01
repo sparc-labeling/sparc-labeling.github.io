@@ -1,0 +1,3 @@
+```json
+[{"point_2d": [405, 703], "label": "pink round toy"}]
+```

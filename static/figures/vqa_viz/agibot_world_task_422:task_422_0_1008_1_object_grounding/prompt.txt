@@ -1,0 +1,1 @@
+Given the task 'grip the red battery on the conveyor belt with the left arm then place the held red battery into the logistics box with the left arm', point to the red battery. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

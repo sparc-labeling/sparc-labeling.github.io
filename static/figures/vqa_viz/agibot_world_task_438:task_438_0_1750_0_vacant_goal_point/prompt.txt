@@ -1,0 +1,1 @@
+Given the task 'raise the right arm to pick up ballpoint pen from the desk then place the held ballpoint pen into the pen holder on the desk', point to a valid empty spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

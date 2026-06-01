@@ -1,0 +1,1 @@
+Given the task 'grab the blue toothbrush cup on the table with the right arm then place the held blue toothbrush cup into white plastic bag', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

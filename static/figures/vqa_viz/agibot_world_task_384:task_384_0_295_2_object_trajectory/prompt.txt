@@ -1,0 +1,1 @@
+Given the task 'push the misplaced book on the shelf to the end with your right arm', predict 8 ordered waypoints for the book. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

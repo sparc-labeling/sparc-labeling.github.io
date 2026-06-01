@@ -1,0 +1,1 @@
+Point to a valid empty spot at the target location for 'grasp the garbage bag with the right arm then carry the garbage bag towards the large trash bin with the right arm then throw the held trash bag into the large trash can with the right arm'. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

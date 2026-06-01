@@ -1,0 +1,1 @@
+Given the task 'place the steam iron held in the right hand back into the slot on the right side of white garment steamer', point to a valid empty spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

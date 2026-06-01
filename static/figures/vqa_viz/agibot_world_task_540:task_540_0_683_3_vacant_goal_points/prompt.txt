@@ -1,0 +1,1 @@
+Given the task 'place the held remote control back on the table with right arm', return 6 free points at the target location. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

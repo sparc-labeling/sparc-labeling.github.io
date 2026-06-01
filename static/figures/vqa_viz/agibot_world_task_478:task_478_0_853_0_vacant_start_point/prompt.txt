@@ -1,0 +1,1 @@
+Locate a free spot at washstand. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

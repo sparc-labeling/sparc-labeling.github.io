@@ -1,0 +1,1 @@
+Given the task 'pull the held curtain in the direction of right arm to the end with right arm', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

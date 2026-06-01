@@ -1,0 +1,1 @@
+Given the task 'place the paint marker held in the right hand into the pen holder on the desk', predict 8 ordered waypoints for the paint marker to reach a valid empty spot at right hand. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

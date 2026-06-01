@@ -1,0 +1,1 @@
+Given the task 'grasp the collar of beige short-sleeve with both hands and fold it down to the hem', plan 8 ordered waypoints for the beige short-sleeve shirt from [544, 765]. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

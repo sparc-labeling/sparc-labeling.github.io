@@ -1,0 +1,1 @@
+Given the task 'pick up the folded cloth with right arm then place the folded cloth with right arm on the edge of the sink', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

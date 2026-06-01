@@ -1,0 +1,1 @@
+Given the task 'insert the memory stick into the nearest slot with the left arm then press the memory module with both arms in coordination', point to a valid empty spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

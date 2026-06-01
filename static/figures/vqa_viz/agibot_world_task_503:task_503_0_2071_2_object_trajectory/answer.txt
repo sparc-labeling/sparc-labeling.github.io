@@ -1,0 +1,3 @@
+```json
+[{"point_2d": [403, 696], "label": "waypoint_1"}, {"point_2d": [399, 649], "label": "waypoint_2"}, {"point_2d": [403, 590], "label": "waypoint_3"}, {"point_2d": [410, 532], "label": "waypoint_4"}, {"point_2d": [415, 474], "label": "waypoint_5"}, {"point_2d": [412, 429], "label": "waypoint_6"}, {"point_2d": [425, 469], "label": "waypoint_7"}, {"point_2d": [421, 474], "label": "waypoint_8"}]
+```

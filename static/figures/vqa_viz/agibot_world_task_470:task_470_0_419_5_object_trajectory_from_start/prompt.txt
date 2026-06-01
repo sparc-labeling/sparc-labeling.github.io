@@ -1,0 +1,1 @@
+Given the task 'place the trash bin back on the ground with the left arm', starting from [387, 810], trace 8 ordered waypoints for the trash bin toward a target spot at ground. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

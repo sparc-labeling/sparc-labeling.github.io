@@ -1,0 +1,1 @@
+Given the task 'pick up the showerhead above the switch with right arm then pass the held showerhead with both hands', starting from [666, 843], trace 8 ordered waypoints for the showerhead. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

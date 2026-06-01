@@ -1,0 +1,1 @@
+Given the task 'cover the gray kettle lid with left arm', the gray kettle lid starts at [167, 252]. Predict 8 ordered waypoints. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

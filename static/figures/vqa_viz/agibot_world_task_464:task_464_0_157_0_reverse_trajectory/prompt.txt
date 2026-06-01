@@ -1,0 +1,1 @@
+Given the task 'lift the lid of the tissue holder on the wall with the right arm', plan 8 ordered waypoints for the tissue holder lid to move to an empty position at on the wall. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

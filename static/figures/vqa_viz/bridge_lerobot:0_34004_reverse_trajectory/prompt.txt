@@ -1,0 +1,1 @@
+Given the task 'moved the green cloth on the upper part of the table', trace 8 ordered waypoints for the green cloth toward a free spot at upper part of the table. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

@@ -1,0 +1,1 @@
+Given the task 'grasp the waistband of pink athletic shorts with both hands and fold it to the leg pure white bed sheets', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

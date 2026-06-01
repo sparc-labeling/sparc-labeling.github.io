@@ -1,0 +1,1 @@
+Given the task 'lift the pink toothbrush cup in the top-left corner of the material frame with the left arm then place the held pink toothbrush cup in the left blue target box', point to a free spot at top-left corner of the material frame. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

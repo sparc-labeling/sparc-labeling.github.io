@@ -1,0 +1,1 @@
+Identify 6 valid points at the target location for 'grab the blue hand cream on the table with the right arm then place the grasped blue hand cream into blue nylon bag with the right arm'. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

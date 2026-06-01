@@ -1,0 +1,1 @@
+Point to a valid empty spot at the target location for 'grasp the yogurt bowl on the table with the right arm then place the grasped yogurt bowl into blue nylon bag'. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

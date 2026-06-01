@@ -1,0 +1,1 @@
+To complete 'lift the steam iron on the right side of the right arm', predict 8 ordered waypoints for the steam iron to reach at right side. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

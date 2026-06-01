@@ -1,0 +1,1 @@
+Given the task 'pick up the green bottle laundry detergent from the conveyor belt with right arm then place the held item into the box with right arm', point to a free spot at conveyor belt. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

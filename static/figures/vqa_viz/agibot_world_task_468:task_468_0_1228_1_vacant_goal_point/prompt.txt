@@ -1,0 +1,1 @@
+Given the task 'place the removed black long-sleeve into the basket with the left arm', locate a free spot at the target location. Output the point coordinates in JSON format like [{"point_2d": [x, y], "label": "target"}]. Use integer coordinates between 0 and 1000.

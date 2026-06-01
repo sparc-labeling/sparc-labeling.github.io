@@ -1,0 +1,1 @@
+Given the task 'grip the wardrobe door handle with the right arm then open the wardrobe with the right arm', the wardrobe door handle starts at [526, 779]. Predict 8 ordered waypoints. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

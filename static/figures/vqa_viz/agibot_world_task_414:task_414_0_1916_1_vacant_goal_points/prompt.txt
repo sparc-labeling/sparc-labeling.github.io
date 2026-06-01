@@ -1,0 +1,1 @@
+Given the task 'grasp the collar with the left arm and lift the garment then hang the clothes held in the left arm on the left side of wooden clothes hanger', mark 6 empty positions at the target location. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.

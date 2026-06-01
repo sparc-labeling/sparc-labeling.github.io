@@ -1,0 +1,1 @@
+Identify 6 valid points at the target location for 'hang the held hand towel with hanging cord on the hook on the wall with right arm'. Return only a JSON list like [{"point_2d": [x1, y1], "label": "point_1"}, {"point_2d": [x2, y2], "label": "point_2"}, ...]. Use integer coordinates between 0 and 1000.
