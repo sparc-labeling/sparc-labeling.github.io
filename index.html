@@ -1292,7 +1292,7 @@
         <button class="vqa-filter button is-small is-rounded is-light" data-filter="oxe_lerobot" onclick="filterVQA(this)">Open X-Embodiment</button>
       </div>
 
-      <div id="vqa-grid" style="display:flex;flex-direction:column;gap:2rem;max-height:700px;overflow-y:auto;padding-right:0.5rem;">
+      <div id="vqa-grid" style="display:flex;flex-direction:column;gap:2rem;max-height:1000px;overflow-y:auto;padding-right:0.5rem;">
 
         <div class="vqa-group" data-dataset="agibot_world">
           <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
@@ -1659,7 +1659,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 15907</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Trajectory from Start</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_15907_object_trajectory_from_start/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1673,15 +1673,7 @@
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Point to a valid empty spot at the target location for 'move the cloth to right side'.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [471, 647], &quot;label&quot;: &quot;right side&quot;}] ```</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="bridge_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 15923</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_15923_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1695,7 +1687,15 @@
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'pick the blue cloth from the table', predict 8 ordered waypoints for the blue cloth.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [335, 687], &quot;label&quot;: &quot;waypoint_1&quot;}, {&quot;point_2d&quot;: [520, 632], &quot;label&quot;: &quot;waypoint_2&quot;}, {&quot;point_2d&quot;: [576, 645], &quot;label&quot;: &quot;waypoint_3&quot;}, {&quot;po</div>
               </div>
-            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div>
+          </div>
+        </div>
+        <div class="vqa-group" data-dataset="bridge_lerobot">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
+            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
+            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 15923</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Goal Points</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_15923_vacant_goal_points/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1709,30 +1709,14 @@
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'pick the blue cloth from the table', identify 6 valid free spots at table.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [310, 676], &quot;label&quot;: &quot;vacant_start_point_1&quot;}, {&quot;point_2d&quot;: [428, 391], &quot;label&quot;: &quot;vacant_start_point_2&quot;}, {&quot;point_2d&quot;: [452, 932], &quot;label&quot;:</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="bridge_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 34004</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Reverse Trajectory</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_34004_reverse_trajectory/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'moved the green cloth on the upper part of the table', trace 8 ordered waypoints for the green cloth toward a free spot at upper part of the table.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [448, 569], &quot;label&quot;: &quot;reverse_waypoint_1&quot;}, {&quot;point_2d&quot;: [463, 559], &quot;label&quot;: &quot;reverse_waypoint_2&quot;}, {&quot;point_2d&quot;: [496, 521], &quot;label&quot;: &quot;re</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="bridge_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 35311</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Start Point</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_35311_vacant_start_point/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1747,7 +1731,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 21620</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_21620_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1761,15 +1745,7 @@
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'use the orange eraser to wipe the white board', trace 8 ordered waypoints for the white board.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [270, 619], &quot;label&quot;: &quot;waypoint_1&quot;}, {&quot;point_2d&quot;: [344, 394], &quot;label&quot;: &quot;waypoint_2&quot;}, {&quot;point_2d&quot;: [423, 177], &quot;label&quot;: &quot;waypoint_3&quot;}, {&quot;po</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="droid_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 22972</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Trajectory from Start</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_22972_object_trajectory_from_start/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1783,37 +1759,29 @@
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Point to a valid empty spot at the target location for 'remove the fleece blanket from the backrest of the chair'.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [383, 781], &quot;label&quot;: &quot;floor&quot;}] ```</div>
               </div>
-            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div>
+          </div>
+        </div>
+        <div class="vqa-group" data-dataset="droid_lerobot">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
+            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
+            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 22972</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Start Point</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_22972_vacant_start_point/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Locate a free spot at backrest of the chair.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [341, 699], &quot;label&quot;: &quot;backrest of the chair&quot;}] ```</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="droid_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 48610</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Reverse Trajectory</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_48610_reverse_trajectory/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'remove the paper cup from the bottom shelf, put it on the table and then put the white plate in the bottom shelf of the cabinet', predict 8 ordered waypoints for the paper cup to reach a valid empty spot at bottom shelf.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [643, 786], &quot;label&quot;: &quot;reverse_waypoint_1&quot;}, {&quot;point_2d&quot;: [649, 661], &quot;label&quot;: &quot;reverse_waypoint_2&quot;}, {&quot;point_2d&quot;: [662, 536], &quot;label&quot;: &quot;re</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="droid_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 6312</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Goal Points</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_6312_vacant_goal_points/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1835,7 +1803,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 9288</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Reverse Trajectory</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_9288_reverse_trajectory/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1850,37 +1818,21 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 20993</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Start Points</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_20993_vacant_start_points/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Identify 6 valid empty spots at top drawer.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [366, 656], &quot;label&quot;: &quot;vacant_start_point_1&quot;}, {&quot;point_2d&quot;: [469, 594], &quot;label&quot;: &quot;vacant_start_point_2&quot;}, {&quot;point_2d&quot;: [274, 576], &quot;label&quot;:</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="oxe_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 20997</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Reverse Trajectory</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_20997_reverse_trajectory/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'pick green rice chip bag from bottom drawer and place on counter', predict 8 ordered waypoints for the green rice chip bag to reach a valid empty spot at bottom drawer.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [613, 219], &quot;label&quot;: &quot;reverse_waypoint_1&quot;}, {&quot;point_2d&quot;: [635, 242], &quot;label&quot;: &quot;reverse_waypoint_2&quot;}, {&quot;point_2d&quot;: [605, 354], &quot;label&quot;: &quot;re</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="oxe_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 62793</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_62793_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1894,52 +1846,36 @@
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'pick green rice chip bag', plan 8 ordered waypoints for the green rice chip bag to move to a valid position at robot gripper.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [282, 642], &quot;label&quot;: &quot;waypoint_1&quot;}, {&quot;point_2d&quot;: [300, 633], &quot;label&quot;: &quot;waypoint_2&quot;}, {&quot;point_2d&quot;: [336, 601], &quot;label&quot;: &quot;waypoint_3&quot;}, {&quot;po</div>
               </div>
-            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div>
+          </div>
+        </div>
+        <div class="vqa-group" data-dataset="oxe_lerobot">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
+            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
+            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 62793</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Goal Point</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_62793_vacant_goal_point/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Point to a valid empty spot at the target location for 'pick green rice chip bag'.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [709, 249], &quot;label&quot;: &quot;robot gripper&quot;}] ```</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="oxe_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 64524</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Goal Points</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_64524_vacant_goal_points/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Identify 6 valid points at the target location for 'pick green rice chip bag'.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [429, 585], &quot;label&quot;: &quot;placement_point_1&quot;}, {&quot;point_2d&quot;: [782, 353], &quot;label&quot;: &quot;placement_point_2&quot;}, {&quot;point_2d&quot;: [166, 945], &quot;label&quot;: &quot;plac</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="oxe_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 69568</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Trajectory from Start</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_69568_object_trajectory_from_start/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
                 <div style="font-size:0.71rem;color:#333;line-height:1.45;"><strong>Q:</strong> Given the task 'pick green rice chip bag', starting from [308, 590], trace 8 ordered waypoints for the green rice chip bag toward a target spot at robot gripper.</div>
                 <div style="font-size:0.68rem;color:#555;line-height:1.4;margin-top:0.25rem;font-family:monospace;background:#f5f7f5;padding:0.2rem 0.4rem;border-radius:3px;word-break:break-word;"><strong>A:</strong> ```json [{&quot;point_2d&quot;: [308, 590], &quot;label&quot;: &quot;waypoint_1&quot;}, {&quot;point_2d&quot;: [299, 554], &quot;label&quot;: &quot;waypoint_2&quot;}, {&quot;point_2d&quot;: [308, 505], &quot;label&quot;: &quot;waypoint_3&quot;}, {&quot;po</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="vqa-group" data-dataset="oxe_lerobot">
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-            <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
-            <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 71852</span>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+            </div><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Start Point</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_71852_vacant_start_point/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
