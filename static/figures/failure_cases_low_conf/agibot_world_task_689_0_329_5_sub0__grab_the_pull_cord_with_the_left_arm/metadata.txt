@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_689/0/329/5
+subtask_index: 0
+language_instruction: grab the pull cord with the left arm
+mismatch_score: 0.827805
+
+[ours]
+target_mode: density
+pred_idx: 2
+pred_score: 0.541140
+pred_iou: 0.000000
+pred_is_correct: False

@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/15925
+subtask_index: 0
+language_instruction: close the right cabinet door at the top
+mismatch_score: 0.784815
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.584130
+pred_iou: 0.040748
+pred_is_correct: False

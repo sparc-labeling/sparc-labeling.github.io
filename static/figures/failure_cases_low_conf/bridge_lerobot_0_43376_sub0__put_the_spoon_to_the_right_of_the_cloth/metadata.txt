@@ -1,0 +1,12 @@
+dataset: bridge_lerobot
+trajectory_name: 0/43376
+subtask_index: 0
+language_instruction: put the spoon to the right of the cloth
+mismatch_score: 0.817956
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.550990
+pred_iou: 0.000000
+pred_is_correct: False

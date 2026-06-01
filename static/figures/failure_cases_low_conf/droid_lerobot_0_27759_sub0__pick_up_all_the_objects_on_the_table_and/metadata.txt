@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/27759
+subtask_index: 0
+language_instruction: pick up all the objects on the table and put them in order
+mismatch_score: 0.744255
+
+[ours]
+target_mode: density
+pred_idx: 12
+pred_score: 0.624690
+pred_iou: 0.000000
+pred_is_correct: False

@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/7564
+subtask_index: 0
+language_instruction: pick the marker from the cup and put it on the table
+mismatch_score: 0.763273
+
+[ours]
+target_mode: density
+pred_idx: 1
+pred_score: 0.605672
+pred_iou: 0.005590
+pred_is_correct: False

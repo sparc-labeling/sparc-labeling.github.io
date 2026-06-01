@@ -1,0 +1,12 @@
+dataset: bridge_lerobot
+trajectory_name: 0/18250
+subtask_index: 0
+language_instruction: mamalona lamba
+mismatch_score: 0.564658
+
+[ours]
+target_mode: density
+pred_idx: 10
+pred_score: 0.804288
+pred_iou: 0.011887
+pred_is_correct: False

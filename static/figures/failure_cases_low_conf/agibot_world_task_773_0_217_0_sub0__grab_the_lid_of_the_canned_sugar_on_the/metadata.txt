@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_773/0/217/0
+subtask_index: 0
+language_instruction: grab the lid of the canned sugar on the table with the right arm
+mismatch_score: 0.832668
+
+[ours]
+target_mode: density
+pred_idx: 8
+pred_score: 0.536278
+pred_iou: 0.033088
+pred_is_correct: False

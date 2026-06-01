@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_390/0/718/7
+subtask_index: 0
+language_instruction: scan the barcode of the held tomato sauce with the right arm using a barcode scanner
+mismatch_score: 0.775378
+
+[ours]
+target_mode: density
+pred_idx: 13
+pred_score: 0.593567
+pred_iou: 0.000000
+pred_is_correct: False

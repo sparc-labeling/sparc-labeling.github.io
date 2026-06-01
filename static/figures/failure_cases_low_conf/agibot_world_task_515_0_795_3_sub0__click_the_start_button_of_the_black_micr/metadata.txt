@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_515/0/795/3
+subtask_index: 0
+language_instruction: click the start button of the black microwave on the desktop with the right arm
+mismatch_score: 0.777663
+
+[ours]
+target_mode: density
+pred_idx: 1
+pred_score: 0.591282
+pred_iou: 0.004468
+pred_is_correct: False

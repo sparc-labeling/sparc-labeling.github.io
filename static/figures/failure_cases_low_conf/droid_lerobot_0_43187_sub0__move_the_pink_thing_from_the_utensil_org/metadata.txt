@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/43187
+subtask_index: 0
+language_instruction: move the pink thing from the utensil organizer to the washing machine
+mismatch_score: 0.796884
+
+[ours]
+target_mode: density
+pred_idx: 2
+pred_score: 0.572062
+pred_iou: 0.000000
+pred_is_correct: False

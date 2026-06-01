@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/48217
+subtask_index: 0
+language_instruction: put the orange dice on top of the paper towel
+mismatch_score: 0.866140
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.502806
+pred_iou: 0.000000
+pred_is_correct: False

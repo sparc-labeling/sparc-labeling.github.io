@@ -1,0 +1,12 @@
+dataset: droid_lerobot
+trajectory_name: 0/39909
+subtask_index: 0
+language_instruction: remove a cookie from the wooden cupboard
+mismatch_score: 0.745133
+
+[ours]
+target_mode: density
+pred_idx: 5
+pred_score: 0.623813
+pred_iou: 0.000000
+pred_is_correct: False

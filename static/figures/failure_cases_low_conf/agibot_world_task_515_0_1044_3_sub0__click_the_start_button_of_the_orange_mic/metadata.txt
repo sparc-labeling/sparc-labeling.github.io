@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_515/0/1044/3
+subtask_index: 0
+language_instruction: click the start button of the orange microwave on the desktop with the right arm
+mismatch_score: 1.010236
+
+[ours]
+target_mode: density
+pred_idx: 1
+pred_score: 0.358710
+pred_iou: 0.000000
+pred_is_correct: False

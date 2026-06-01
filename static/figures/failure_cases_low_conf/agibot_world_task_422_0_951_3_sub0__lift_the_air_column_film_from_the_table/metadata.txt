@@ -1,0 +1,12 @@
+dataset: agibot_world
+trajectory_name: task_422/0/951/3
+subtask_index: 0
+language_instruction: lift the air column film from the table with the right arm then place the air column film into the logistics box above the product with the right arm
+mismatch_score: 0.781253
+
+[ours]
+target_mode: density
+pred_idx: 1
+pred_score: 0.587692
+pred_iou: 0.032668
+pred_is_correct: False

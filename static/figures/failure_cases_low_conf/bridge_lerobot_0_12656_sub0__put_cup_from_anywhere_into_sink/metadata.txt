@@ -1,0 +1,12 @@
+dataset: bridge_lerobot
+trajectory_name: 0/12656
+subtask_index: 0
+language_instruction: put cup from anywhere into sink
+mismatch_score: 0.654044
+
+[ours]
+target_mode: density
+pred_idx: 0
+pred_score: 0.714902
+pred_iou: 0.000000
+pred_is_correct: False
