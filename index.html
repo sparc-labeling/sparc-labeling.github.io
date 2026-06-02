@@ -265,1050 +265,121 @@
     <div class="container">
       <h2 class="title is-3">Qualitative Results</h2>
       <p class="has-text-centered" style="margin-bottom:1rem; color:#666;">Each slide shows the detector baseline (left) vs. SPARC (right) on the same demonstration.</p>
-      <div id="results-carousel2" class="carousel results-carousel">
-        <div class="item">
-          <div class="rg-qual">
+
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+        <button onclick="qrNav(-1)" id="qr-prev" style="padding:0.35rem 0.9rem;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer;font-size:0.85rem;">← Prev</button>
+        <span id="qr-label" style="font-size:0.85rem;color:#555;min-width:70px;text-align:center;">1 / 10</span>
+        <button onclick="qrNav(1)" id="qr-next" style="padding:0.35rem 0.9rem;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer;font-size:0.85rem;">Next →</button>
+      </div>
+
+      
+      <div id="qr-page-1" style="">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/agibot_world_task_358_0_13_0_sub0__lift_a_piece_of_whole_wheat_toast_from_t/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_358_0_13_0_sub0__lift_a_piece_of_whole_wheat_toast_from_t/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">lift a piece of whole wheat toast from t</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_367_0_180_1_sub0__pick_up_the_whole_wheat_toast_from_the_s/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_367_0_180_1_sub0__pick_up_the_whole_wheat_toast_from_the_s/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the whole wheat toast from the s</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_385_0_42_2_sub0__retrieve_grapes_from_the_shelf/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_385_0_42_2_sub0__retrieve_grapes_from_the_shelf/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">retrieve grapes from the shelf</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_392_0_158_3_sub0__scrub_the_transparent_water_bottle_held/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_392_0_158_3_sub0__scrub_the_transparent_water_bottle_held/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">scrub the transparent water bottle held</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_466_0_511_1_sub0__pick_up_the_black_short_sleeve_from_the/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_466_0_511_1_sub0__pick_up_the_black_short_sleeve_from_the/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the black short sleeve from the</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_477_0_108_3_sub0__pick_up_the_folded_towel_with_right_arm/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_477_0_108_3_sub0__pick_up_the_folded_towel_with_right_arm/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the folded towel with right arm</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_486_0_112_0_sub0__pick_up_the_bottled_water_with_right_arm/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_486_0_112_0_sub0__pick_up_the_bottled_water_with_right_arm/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the bottled water with right arm</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_486_0_294_2_sub0__pick_up_the_bottled_water_with_left_arm/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_486_0_294_2_sub0__pick_up_the_bottled_water_with_left_arm/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the bottled water with left arm</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-2" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/agibot_world_task_491_0_190_4_sub0__place_the_held_steam_iron_back_into_the/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_491_0_190_4_sub0__place_the_held_steam_iron_back_into_the/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the held steam iron back into the</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_504_0_679_0_sub0__pick_up_the_lemon_preserves_from_the_car/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_504_0_679_0_sub0__pick_up_the_lemon_preserves_from_the_car/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the lemon preserves from the car</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_508_0_1067_5_sub0__place_the_picked-up_brown_glasses_case_i/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_508_0_1067_5_sub0__place_the_picked-up_brown_glasses_case_i/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the picked-up brown glasses case i</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_522_0_731_1_sub0__pick_up_the_empty_tissue_bag_from_the_pa/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_522_0_731_1_sub0__pick_up_the_empty_tissue_bag_from_the_pa/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the empty tissue bag from the pa</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_527_0_445_13_sub0__place_the_picked-up_sofa_cushion_neatly/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_527_0_445_13_sub0__place_the_picked-up_sofa_cushion_neatly/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the picked-up sofa cushion neatly</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_537_0_617_1_sub0__lift_the_quilt_on_the_bed_with_right_arm/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_537_0_617_1_sub0__lift_the_quilt_on_the_bed_with_right_arm/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">lift the quilt on the bed with right arm</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_596_0_45_0_sub0__press_the_lid-opening_button_with_the_le/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_596_0_45_0_sub0__press_the_lid-opening_button_with_the_le/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">press the lid-opening button with the le</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_596_0_585_0_sub0__press_the_lid-opening_button_with_the_le/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_596_0_585_0_sub0__press_the_lid-opening_button_with_the_le/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">press the lid-opening button with the le</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-3" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/agibot_world_task_597_0_823_1_sub0__pick_up_the_shrimp_chips_from_the_replen/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_597_0_823_1_sub0__pick_up_the_shrimp_chips_from_the_replen/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the shrimp chips from the replen</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_607_0_12_7_sub0__place_the_held_barcode_scanner_on_the_ca/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_607_0_12_7_sub0__place_the_held_barcode_scanner_on_the_ca/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the held barcode scanner on the ca</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_751_0_340_3_sub0__cut_the_dough_into_small_pieces_with_a_k/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_751_0_340_3_sub0__cut_the_dough_into_small_pieces_with_a_k/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">cut the dough into small pieces with a k</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_762_0_279_1_sub0__dip_the_held_brush_into_the_paint_bucket/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/agibot_world_task_762_0_279_1_sub0__dip_the_held_brush_into_the_paint_bucket/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">dip the held brush into the paint bucket</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_110_sub0__take_clothes_out_of_laundry_machine/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_110_sub0__take_clothes_out_of_laundry_machine/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">take clothes out of laundry machine</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_12457_sub0__put_cup_from_drying_rack_to_sink/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_12457_sub0__put_cup_from_drying_rack_to_sink/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put cup from drying rack to sink</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_12465_sub0__put_cup_from_drying_rack_to_sink/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_12465_sub0__put_cup_from_drying_rack_to_sink/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put cup from drying rack to sink</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_15491_sub0__put_the_red_figure_at_the_bottom_edge_of/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_15491_sub0__put_the_red_figure_at_the_bottom_edge_of/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the red figure at the bottom edge of</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-4" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/bridge_lerobot_0_1550_sub0__flip_pot_upright_in_sink/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_1550_sub0__flip_pot_upright_in_sink/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">flip pot upright in sink</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_16246_sub0__sweep_into_pile/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_16246_sub0__sweep_into_pile/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">sweep into pile</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_21702_sub0__moved_the_spoon_to_the_lower_right_side/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_21702_sub0__moved_the_spoon_to_the_lower_right_side/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">moved the spoon to the lower right side</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_2604_sub0__put_carrot_on_plate/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_2604_sub0__put_carrot_on_plate/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put carrot on plate</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_26764_sub0__take_the_cube_off_of_the_rectangular_blo/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_26764_sub0__take_the_cube_off_of_the_rectangular_blo/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">take the cube off of the rectangular blo</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_28479_sub0__fitaovan_mipetraka_izay_mikatona/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_28479_sub0__fitaovan_mipetraka_izay_mikatona/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">fitaovan mipetraka izay mikatona</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_29588_sub0__put_the_green_thing_to_the_bottom_right/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_29588_sub0__put_the_green_thing_to_the_bottom_right/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the green thing to the bottom right</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_3315_sub0__put_eggplant_in_pot_or_pan/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_3315_sub0__put_eggplant_in_pot_or_pan/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put eggplant in pot or pan</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-5" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/bridge_lerobot_0_33270_sub0__move_the_spatula_into_the_sink/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_33270_sub0__move_the_spatula_into_the_sink/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">move the spatula into the sink</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_34073_sub0__put_the_small_can_in_the_right_burner_to/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_34073_sub0__put_the_small_can_in_the_right_burner_to/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the small can in the right burner to</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_4453_sub0__right_pepper_shaker/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_4453_sub0__right_pepper_shaker/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">right pepper shaker</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_9705_sub0__close_low_fridge/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/bridge_lerobot_0_9705_sub0__close_low_fridge/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">close low fridge</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_12025_sub0__close_the_bottom_drawer_of_the_file_cabi/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_12025_sub0__close_the_bottom_drawer_of_the_file_cabi/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">close the bottom drawer of the file cabi</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_13767_sub0__move_the_right_faucet_handle_forward/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_13767_sub0__move_the_right_faucet_handle_forward/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">move the right faucet handle forward</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_15692_sub0__remove_the_bottles_from_the_box_and_put/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_15692_sub0__remove_the_bottles_from_the_box_and_put/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">remove the bottles from the box and put</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_18250_sub0__remove_the_pen_in_the_black_cup_and_put/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_18250_sub0__remove_the_pen_in_the_black_cup_and_put/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">remove the pen in the black cup and put</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-6" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/droid_lerobot_0_20733_sub0__push_down_the_right_switch_of_the_toaste/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_20733_sub0__push_down_the_right_switch_of_the_toaste/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">push down the right switch of the toaste</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_2741_sub0__pour_the_items_in_the_black_bowl_onto_th/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_2741_sub0__pour_the_items_in_the_black_bowl_onto_th/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pour the items in the black bowl onto th</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_31894_sub0__pick_the_white_object_and_put_it_in_the/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_31894_sub0__pick_the_white_object_and_put_it_in_the/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick the white object and put it in the</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_34664_sub0__put_the_bar_into_the_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_34664_sub0__put_the_bar_into_the_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the bar into the bowl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_34676_sub0__put_the_candy_bar_in_the_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_34676_sub0__put_the_candy_bar_in_the_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the candy bar in the bowl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_37762_sub0__put_one_silver_spoon_on_the_cutlery_hold/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_37762_sub0__put_one_silver_spoon_on_the_cutlery_hold/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put one silver spoon on the cutlery hold</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_38555_sub0__put_the_towel_in_the_drawer/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_38555_sub0__put_the_towel_in_the_drawer/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the towel in the drawer</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_41359_sub0__move_the_carton_box_to_the_left/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_41359_sub0__move_the_carton_box_to_the_left/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">move the carton box to the left</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-7" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/droid_lerobot_0_41568_sub0__shift_the_cubes_to_the_counter/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_41568_sub0__shift_the_cubes_to_the_counter/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">shift the cubes to the counter</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_43376_sub0__pick_up_the_white_tissue_and_put_it_in_t/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_43376_sub0__pick_up_the_white_tissue_and_put_it_in_t/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the white tissue and put it in t</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_43475_sub0__move_the_silver_object_to_the_left/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_43475_sub0__move_the_silver_object_to_the_left/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">move the silver object to the left</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_44250_sub0__put_the_bottle_onto_the_spice_rack/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_44250_sub0__put_the_bottle_onto_the_spice_rack/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the bottle onto the spice rack</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_4652_sub0__pick_up_the_charging_brick_from_the_tabl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_4652_sub0__pick_up_the_charging_brick_from_the_tabl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the charging brick from the tabl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_47323_sub0__put_the_lid_on_the_pot/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_47323_sub0__put_the_lid_on_the_pot/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the lid on the pot</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_4754_sub0__put_the_orange_object_inside_the_blue_cu/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_4754_sub0__put_the_orange_object_inside_the_blue_cu/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">put the orange object inside the blue cu</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_512_sub0__pick_up_the_orange_object_tool_and_put_i/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/droid_lerobot_0_512_sub0__pick_up_the_orange_object_tool_and_put_i/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the orange object tool and put i</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-8" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_17219_sub0__pick_up_the_ceramic_cup/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_17219_sub0__pick_up_the_ceramic_cup/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the ceramic cup</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_23700_sub0__place_the_white_sponge_in_the_ceramic_bo/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_23700_sub0__place_the_white_sponge_in_the_ceramic_bo/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the white sponge in the ceramic bo</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_23723_sub0__place_the_pepper_on_the_white_sponge/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_23723_sub0__place_the_pepper_on_the_white_sponge/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the pepper on the white sponge</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_2847_sub0__drag_the_pepper_across_the_table/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_2847_sub0__drag_the_pepper_across_the_table/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">drag the pepper across the table</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_3087_sub0__wipe_table_surface_with_towel/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_3087_sub0__wipe_table_surface_with_towel/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">wipe table surface with towel</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_32343_sub0__place_brush_in_red_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_32343_sub0__place_brush_in_red_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place brush in red bowl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_33392_sub0__stand_the_bottle_upright/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_33392_sub0__stand_the_bottle_upright/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">stand the bottle upright</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_34676_sub0__place_the_bottle_in_the_ceramic_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_34676_sub0__place_the_bottle_in_the_ceramic_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the bottle in the ceramic bowl</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-9" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_35741_sub0__knock_the_eraser_over/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_35741_sub0__knock_the_eraser_over/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">knock the eraser over</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_36178_sub0__place_the_eraser_in_the_ceramic_cup/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_36178_sub0__place_the_eraser_in_the_ceramic_cup/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the eraser in the ceramic cup</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_3665_sub0__place_towel_in_purple_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_3665_sub0__place_towel_in_purple_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place towel in purple bowl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_37837_sub0__place_pepper_in_table_surface/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_37837_sub0__place_pepper_in_table_surface/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place pepper in table surface</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_38698_sub0__wipe_red_bowl_with_towel/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_38698_sub0__wipe_red_bowl_with_towel/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">wipe red bowl with towel</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_4163_sub0__place_banana_in_red_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_4163_sub0__place_banana_in_red_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place banana in red bowl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_6619_sub0__knock_the_bottle_over/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_6619_sub0__knock_the_bottle_over/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">knock the bottle over</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_6717_sub0__place_the_eraser_on_the_white_sponge/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_6717_sub0__place_the_eraser_on_the_white_sponge/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place the eraser on the white sponge</div>
-          </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rg-qual">
+      </div>
+      <div id="qr-page-10" style="display:none;">
+        <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
               <div>
                 <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_752_sub0__pick_up_the_ceramic_bowl/det.png" style="width:100%; display:block; border-radius:3px;"/>
                 <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_bc_z_lerobot_0_752_sub0__pick_up_the_ceramic_bowl/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick up the ceramic bowl</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_fractal_0_11226_sub0__pick_rxbar_chocolate/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_fractal_0_11226_sub0__pick_rxbar_chocolate/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">pick rxbar chocolate</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_fractal_0_20289_sub0__move_redbull_can_near_green_rice_chip_ba/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_fractal_0_20289_sub0__move_redbull_can_near_green_rice_chip_ba/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">move redbull can near green rice chip ba</div>
-          </div>
-          <div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_fractal_0_26365_sub0__place_coke_can_into_middle_drawer/det.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#888; margin-top:2px;">Detector</div>
-              </div>
-              <div>
-                <img src="static/figures/qualitative_results/oxe_lerobot_fractal_0_26365_sub0__place_coke_can_into_middle_drawer/ours.png" style="width:100%; display:block; border-radius:3px;"/>
-                <div style="font-size:0.65rem; text-align:center; color:#4c9a8e; margin-top:2px;">SPARC</div>
-              </div>
-            </div>
-            <div style="font-size:0.65rem; text-align:center; color:#555; margin-top:3px; line-height:1.3;">place coke can into middle drawer</div>
-          </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
 </section>
+<script>
+var _qrCur = 1, _qrTotal = 10;
+function qrNav(dir) {
+  var next = Math.max(1, Math.min(_qrTotal, _qrCur + dir));
+  if (next === _qrCur) return;
+  document.getElementById('qr-page-' + _qrCur).style.display = 'none';
+  _qrCur = next;
+  document.getElementById('qr-page-' + _qrCur).style.display = '';
+  document.getElementById('qr-label').textContent = _qrCur + ' / ' + _qrTotal;
+  document.getElementById('qr-prev').style.opacity = _qrCur === 1 ? '0.35' : '1';
+  document.getElementById('qr-next').style.opacity = _qrCur === _qrTotal ? '0.35' : '1';
+}
+qrNav(0);
+</script>
 <!-- End more results carousel -->
 
 <!-- Policy Learning -->
