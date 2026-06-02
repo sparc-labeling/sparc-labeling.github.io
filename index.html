@@ -48,6 +48,44 @@
       -webkit-text-stroke: 2px transparent;
       filter: drop-shadow(0 0 0.4px #4c9a8e) drop-shadow(0 0 0.4px #5b6fa6);
     }
+
+    /* ── Responsive grid classes ── */
+    .rg-2  { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start; }
+    .rg-4  { display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; }
+    .rg-5  { display:grid; grid-template-columns:repeat(5,1fr); gap:5px; }
+    .rg-policy { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+    .rg-ann    { display:grid; grid-template-columns:1fr 1fr; gap:0.5rem 0.75rem; }
+    .rg-rollout{ display:grid; grid-template-columns:repeat(5,1fr); gap:5px; }
+    .rg-qual   { display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem; }
+    .rg-fail   { display:grid; grid-template-columns:repeat(5,1fr); gap:1rem; }
+    .rg-vqa    { display:grid; gap:0.75rem; }
+    .rg-vqa-4  { grid-template-columns:repeat(4,1fr); }
+    .rg-vqa-3  { grid-template-columns:repeat(3,1fr); }
+    .rg-vqa-2  { grid-template-columns:repeat(2,1fr); }
+    .rg-vqa-1  { grid-template-columns:1fr; }
+
+    @media (max-width: 900px) {
+      .rg-2, .rg-policy { grid-template-columns: 1fr; gap: 1.5rem; }
+      .rg-4  { grid-template-columns: repeat(2,1fr); }
+      .rg-5  { grid-template-columns: 1fr 1fr; }
+      .rg-rollout { grid-template-columns: repeat(3,1fr); }
+      .rg-qual { grid-template-columns: repeat(2,1fr); }
+      .rg-fail { grid-template-columns: repeat(3,1fr); }
+      .rg-vqa-4, .rg-vqa-3 { grid-template-columns: repeat(2,1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .rg-2, .rg-policy { grid-template-columns: 1fr; gap: 1rem; }
+      .rg-4  { grid-template-columns: 1fr 1fr; }
+      .rg-5  { grid-template-columns: 1fr 1fr; }
+      .rg-rollout { grid-template-columns: repeat(2,1fr); gap: 4px; }
+      .rg-ann { grid-template-columns: 1fr; }
+      .rg-qual { grid-template-columns: 1fr 1fr; padding: 0 0.25rem; }
+      .rg-fail { grid-template-columns: repeat(2,1fr); gap: 0.6rem; }
+      .rg-vqa-4, .rg-vqa-3, .rg-vqa-2 { grid-template-columns: 1fr; }
+      .publication-title { font-size: 1.5rem !important; }
+      .title.is-2 { font-size: 1.4rem !important; }
+    }
   </style>
 </head>
 <body>
@@ -200,7 +238,7 @@
 <section class="section hero" style="background:#f5f5f5;">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Results</h2>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
+    <div class="rg-2">
       <div>
         <img src="static/figures/selective_plot-1.png" alt="Selective prediction curves" style="width:100%;"/>
         <h2 class="subtitle has-text-centered" style="margin-top:0.75rem;">
@@ -229,7 +267,7 @@
       <p class="has-text-centered" style="margin-bottom:1rem; color:#666;">Each slide shows the detector baseline (left) vs. SPARC (right) on the same demonstration.</p>
       <div id="results-carousel2" class="carousel results-carousel">
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -338,7 +376,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -447,7 +485,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -556,7 +594,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -665,7 +703,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -774,7 +812,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -883,7 +921,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -992,7 +1030,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -1101,7 +1139,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -1210,7 +1248,7 @@
           </div>
         </div>
         <div class="item">
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.6rem; padding:0 0.75rem;">
+          <div class="rg-qual">
 
           <div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px;">
@@ -1279,13 +1317,13 @@
     <h2 class="title is-2" style="font-family:'Google Sans',sans-serif;">Policy Learning</h2>
     <p style="margin-bottom:1.5rem;color:#555;font-size:1.05rem;">We train reasoning VLAs on 250 demonstrations across 10 cluttered tasks. Reasoning Annotation quality drives the performance gap in visually ambiguous scenes.</p>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+    <div class="rg-policy">
 
       <!-- Left: annotation quality -->
       <div>
         <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:0.6rem;">Annotation Quality: SPARC vs. Detector</h3>
         <p style="font-size:0.95rem;color:#666;margin-bottom:0.75rem;">In cluttered scenes with visually similar objects, detector-based annotation selects the wrong object. SPARC uses interaction evidence to localize the correct one.</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem 0.75rem;">
+        <div class="rg-ann">
             <!-- row 1 titles -->
             <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;">Put The Yellow Cube Into The Red Bowl</div>
             <div style="font-size:0.72rem;font-weight:600;color:#555;text-align:center;padding-bottom:0.35rem;">Put The Yellow Cube Into The Red Dustpan</div>
@@ -1346,7 +1384,7 @@
           <div style="font-size:0.9rem;font-weight:700;color:#c0392b;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
             <span style="width:9px;height:9px;background:#c0392b;border-radius:50%;display:inline-block;"></span>Detection Reasoning
           </div>
-          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
+          <div class="rg-rollout">
             <div style="border-radius:6px;overflow:hidden;background:#000;">
                 <video autoplay muted loop playsinline style="width:100%;display:block;">
                   <source src="static/videos/baseline_clip_02_2x_compressed.mp4" type="video/mp4">
@@ -1379,7 +1417,7 @@
           <div style="font-size:0.9rem;font-weight:700;color:#4c9a8e;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
             <span style="width:9px;height:9px;background:#4c9a8e;border-radius:50%;display:inline-block;"></span>SPARC Reasoning
           </div>
-          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
+          <div class="rg-rollout">
             <div style="border-radius:6px;overflow:hidden;background:#000;">
                 <video autoplay muted loop playsinline style="width:100%;display:block;">
                   <source src="static/videos/reasoning_clip_02_2x_compressed.mp4" type="video/mp4">
@@ -1439,7 +1477,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 352 0 38 1</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_352:task_352_0_38_1_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1475,7 +1513,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 358 0 356 1</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_358:task_358_0_356_1_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1511,7 +1549,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 360 0 188 1</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_360:task_360_0_188_1_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1547,7 +1585,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 367 0 101 0</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_367:task_367_0_101_0_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1583,7 +1621,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 368 0 363 1</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_368:task_368_0_363_1_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1619,7 +1657,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 369 0 361 2</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_369:task_369_0_361_2_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1655,7 +1693,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 374 0 7 0</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_374:task_374_0_7_0_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1691,7 +1729,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 384 0 295 2</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_384:task_384_0_295_2_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1727,7 +1765,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 392 0 76 0</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_392:task_392_0_76_0_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1763,7 +1801,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">AgiBotWorld</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> task 422 0 1008 1</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/agibot_world_task_422:task_422_0_1008_1_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1799,7 +1837,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 15907</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Trajectory from Start</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_15907_object_trajectory_from_start/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1835,7 +1873,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">BridgeData</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 15923</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Goal Points</div>
               <img src="static/figures/vqa_viz/bridge_lerobot:0_15923_vacant_goal_points/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1871,7 +1909,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 21620</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Object Grounding</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_21620_object_grounding/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1907,7 +1945,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 22972</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Start Point</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_22972_vacant_start_point/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1943,7 +1981,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">DROID</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> 0 9288</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Reverse Trajectory</div>
               <img src="static/figures/vqa_viz/droid_lerobot:0_9288_reverse_trajectory/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1958,7 +1996,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 20993</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Start Points</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_20993_vacant_start_points/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -1994,7 +2032,7 @@
             <span style="font-size:0.72rem;font-weight:700;background:#eef5f4;color:#4c9a8e;padding:0.18rem 0.55rem;border-radius:12px;">Open X-Embodiment</span>
             <span style="font-size:0.85rem;color:#444;"><strong>Task:</strong> fractal 0 62793</span>
           </div>
-          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
+          <div class="rg-vqa rg-vqa-4"><div style="background:#fff;border-radius:8px;padding:0.65rem;box-shadow:0 1px 5px rgba(0,0,0,0.07);min-width:0;">
               <div style="font-size:0.67rem;font-weight:700;color:#4c9a8e;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">Vacant Goal Point</div>
               <img src="static/figures/vqa_viz/oxe_lerobot:fractal_0_62793_vacant_goal_point/annotated.png" style="width:100%;border-radius:4px;display:block;" loading="lazy"/>
               <div style="margin-top:0.45rem;">
@@ -2064,7 +2102,7 @@ function filterVQA(btn) {
     </div>
 
     
-    <div id="fc-page-1" style="display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;">
+    <div id="fc-page-1" class="rg-fail">
 <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
           <img src="static/figures/failure_cases_low_conf/bridge_lerobot_0_43376_sub0__put_the_spoon_to_the_right_of_the_cloth/ours.png" style="width:100%;display:block;" loading="lazy"/>
           <div style="padding:0.55rem 0.7rem;">
@@ -2166,7 +2204,7 @@ function filterVQA(btn) {
           </div>
         </div>
     </div>
-    <div id="fc-page-2" style="display:none;grid-template-columns:repeat(5,1fr);gap:1rem;">
+    <div id="fc-page-2" class="rg-fail" style="display:none;">
 <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
           <img src="static/figures/failure_cases/agibot_world_task_689_0_454_1_sub0__pull_down_the_curtain_cord/ours.png" style="width:100%;display:block;" loading="lazy"/>
           <div style="padding:0.55rem 0.7rem;">
@@ -2268,7 +2306,7 @@ function filterVQA(btn) {
           </div>
         </div>
     </div>
-    <div id="fc-page-3" style="display:none;grid-template-columns:repeat(5,1fr);gap:1rem;">
+    <div id="fc-page-3" class="rg-fail" style="display:none;">
 <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
           <img src="static/figures/failure_cases_low_conf/agibot_world_task_390_0_718_7_sub0__scan_the_barcode_of_the_held_tomato_sauc/ours.png" style="width:100%;display:block;" loading="lazy"/>
           <div style="padding:0.55rem 0.7rem;">
@@ -2370,7 +2408,7 @@ function filterVQA(btn) {
           </div>
         </div>
     </div>
-    <div id="fc-page-4" style="display:none;grid-template-columns:repeat(5,1fr);gap:1rem;">
+    <div id="fc-page-4" class="rg-fail" style="display:none;">
 <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
           <img src="static/figures/failure_cases/droid_lerobot_0_13182_sub0__pull_out_the_top_shelf_of_the_nightstand/ours.png" style="width:100%;display:block;" loading="lazy"/>
           <div style="padding:0.55rem 0.7rem;">
@@ -2472,7 +2510,7 @@ function filterVQA(btn) {
           </div>
         </div>
     </div>
-    <div id="fc-page-5" style="display:none;grid-template-columns:repeat(5,1fr);gap:1rem;">
+    <div id="fc-page-5" class="rg-fail" style="display:none;">
 <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
           <img src="static/figures/failure_cases_low_conf/bridge_lerobot_0_5250_sub0__turn_lever_vertical_to_front/ours.png" style="width:100%;display:block;" loading="lazy"/>
           <div style="padding:0.55rem 0.7rem;">
@@ -2574,7 +2612,7 @@ function filterVQA(btn) {
           </div>
         </div>
     </div>
-    <div id="fc-page-6" style="display:none;grid-template-columns:repeat(5,1fr);gap:1rem;">
+    <div id="fc-page-6" class="rg-fail" style="display:none;">
 <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
           <img src="static/figures/failure_cases/agibot_world_task_689_0_364_4_sub0__pull_down_the_curtain_cord_with_the_left/ours.png" style="width:100%;display:block;" loading="lazy"/>
           <div style="padding:0.55rem 0.7rem;">
@@ -2665,7 +2703,7 @@ function fcNav(dir) {
   if (next === _fcCur) return;
   document.getElementById('fc-page-' + _fcCur).style.display = 'none';
   _fcCur = next;
-  document.getElementById('fc-page-' + _fcCur).style.display = 'grid';
+  document.getElementById('fc-page-' + _fcCur).style.display = '';
   document.getElementById('fc-label').textContent = _fcCur + ' / ' + _fcTotal;
   document.getElementById('fc-prev').style.opacity = _fcCur === 1 ? '0.35' : '1';
   document.getElementById('fc-next').style.opacity = _fcCur === _fcTotal ? '0.35' : '1';
