@@ -687,11 +687,11 @@
             html += '<div style="border:1px solid #eee;border-radius:8px;padding:10px;background:#fafafa;">' +
               '<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">' +
                 '<div>' +
-                  '<img src="' + s.det + '" style="width:100%;display:block;border-radius:4px;" loading="lazy"/>' +
+                  '<img src="' + s.det + '" style="width:100%;display:block;border-radius:4px;aspect-ratio:4/3;object-fit:cover;"/>' +
                   '<div style="font-size:0.7rem;text-align:center;color:#c0392b;margin-top:4px;font-weight:600;">Detector</div>' +
                 '</div>' +
                 '<div>' +
-                  '<img src="' + s.ours + '" style="width:100%;display:block;border-radius:4px;" loading="lazy"/>' +
+                  '<img src="' + s.ours + '" style="width:100%;display:block;border-radius:4px;aspect-ratio:4/3;object-fit:cover;"/>' +
                   '<div style="font-size:0.7rem;text-align:center;color:#4c9a8e;margin-top:4px;font-weight:600;">SPARC</div>' +
                 '</div>' +
               '</div>' +
@@ -707,12 +707,12 @@
         }
 
         document.getElementById('qual-prev').addEventListener('click', function() {
-          if (page > 0) { page--; render(); document.getElementById('qual-grid-wrap').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+          if (page > 0) { page--; render(); }
         });
         document.getElementById('qual-next').addEventListener('click', function() {
           var l = layout();
           var perPage = l.cols * l.rows;
-          if (page < Math.ceil(SLIDES.length / perPage) - 1) { page++; render(); document.getElementById('qual-grid-wrap').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+          if (page < Math.ceil(SLIDES.length / perPage) - 1) { page++; render(); }
         });
 
         var resizeTimer;
