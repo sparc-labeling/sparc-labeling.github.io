@@ -63,6 +63,12 @@
     .rg-vqa-3  { grid-template-columns:repeat(3,1fr); }
     .rg-vqa-2  { grid-template-columns:repeat(2,1fr); }
     .rg-vqa-1  { grid-template-columns:1fr; }
+    .droid-gallery { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:1rem; }
+    .droid-card { margin:0; overflow:hidden; border:1px solid #e5e7eb; border-radius:10px; background:#fff; box-shadow:0 3px 12px rgba(32, 50, 70, 0.08); transition:transform 180ms ease, box-shadow 180ms ease; }
+    .droid-card:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(32, 50, 70, 0.14); }
+    .droid-card img { display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover; background:#edf1f5; }
+    .droid-card figcaption { padding:0.65rem 0.8rem 0.7rem; color:#334155; font-size:0.9rem; font-weight:600; line-height:1.25; }
+    .droid-card figcaption::before { content:"DROID"; display:block; margin-bottom:0.2rem; color:#34aa98; font-size:0.66rem; font-weight:700; letter-spacing:0.1em; }
 
     @media (max-width: 900px) {
       .rg-2, .rg-policy { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -72,6 +78,7 @@
       .rg-qual { grid-template-columns: repeat(2,1fr); }
       .rg-fail { grid-template-columns: repeat(3,1fr); }
       .rg-vqa-4, .rg-vqa-3 { grid-template-columns: repeat(2,1fr); }
+      .droid-gallery { grid-template-columns:repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 600px) {
@@ -83,6 +90,8 @@
       .rg-qual { grid-template-columns: 1fr 1fr; padding: 0 0.25rem; }
       .rg-fail { grid-template-columns: repeat(2,1fr); gap: 0.6rem; }
       .rg-vqa-4, .rg-vqa-3, .rg-vqa-2 { grid-template-columns: 1fr; }
+      .droid-gallery { gap:0.65rem; }
+      .droid-card figcaption { padding:0.55rem 0.6rem 0.6rem; font-size:0.8rem; }
       .publication-title { font-size: 1.5rem !important; }
       .title.is-2 { font-size: 1.4rem !important; }
     }
@@ -179,6 +188,35 @@
   </div>
 </section>
 <!-- End video -->
+
+<!-- DROID sample trajectories -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered" style="margin-bottom:1.5rem;">
+      <h2 class="title is-3" style="margin-bottom:0.45rem;">DROID Sample Trajectories</h2>
+      <p class="subtitle is-6" style="margin-bottom:0;">Representative robot demonstrations, each shown from three synchronized camera views.</p>
+    </div>
+    <div class="droid-gallery">
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/arrange_seven_objects.gif" alt="Robot arranging seven objects" loading="lazy"><figcaption>Arrange seven objects</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/bowl_pouring.gif" alt="Robot pouring into a bowl" loading="lazy"><figcaption>Bowl pouring</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/clear_plate.gif" alt="Robot clearing a plate" loading="lazy"><figcaption>Clear plate</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/cups_cabinet.gif" alt="Robot placing cups in a cabinet" loading="lazy"><figcaption>Cups cabinet</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/cutlery_holder.gif" alt="Robot using a cutlery holder" loading="lazy"><figcaption>Cutlery holder</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/lunchbox.gif" alt="Robot handling a lunchbox" loading="lazy"><figcaption>Lunchbox</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/pack_bag.gif" alt="Robot packing a bag" loading="lazy"><figcaption>Pack bag</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/pack_nine_objects.gif" alt="Robot packing nine objects" loading="lazy"><figcaption>Pack nine objects</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/plate_cleaning.gif" alt="Robot cleaning a plate" loading="lazy"><figcaption>Plate cleaning</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/pot_pouring.gif" alt="Robot pouring from a pot" loading="lazy"><figcaption>Pot pouring</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/racket_bin.gif" alt="Robot placing a racket in a bin" loading="lazy"><figcaption>Racket bin</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/separate_five_objects.gif" alt="Robot separating five objects" loading="lazy"><figcaption>Separate five objects</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/tape_holder.gif" alt="Robot using a tape holder" loading="lazy"><figcaption>Tape holder</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/towel_unfolding.gif" alt="Robot unfolding a towel" loading="lazy"><figcaption>Towel unfolding</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/wipe_counter.gif" alt="Robot wiping a counter" loading="lazy"><figcaption>Wipe counter</figcaption></figure>
+      <figure class="droid-card"><img src="static/figures/droid_sample_trajectories/wrap_shirts.gif" alt="Robot wrapping shirts" loading="lazy"><figcaption>Wrap shirts</figcaption></figure>
+    </div>
+  </div>
+</section>
+<!-- End DROID sample trajectories -->
 
 <!-- Teaser figure -->
 <section class="hero teaser">
